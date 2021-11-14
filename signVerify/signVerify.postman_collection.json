@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "35ad8d70-b305-4525-a82d-ca9b13363e4d",
+		"name": "signVerify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "modelTrain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"trainDir\":\"sign_data/train/\",\n\"testDir\": \"sign_data/test/\",\n\"Project\":\"signVerify\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ModelTrain/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ModelTrain",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modelTest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"inputFile\":\"sign_data/test/058_forg/01_0109058.PNG\",\n\"modelName\": \"signVerify_model.h5\",\n\"Project\":\"signVerify\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/signVerify/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"signVerify",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

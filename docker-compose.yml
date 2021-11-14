@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    python:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./signVerify:/signVerify
+        ports:
+            - 8000:8000
