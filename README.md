@@ -1,2 +1,2 @@
-# Signature-Verification
-Signature Verification using Deep Learning
+# Signature-Verification System
+Signature samples are classified as forged or genuine using VGG16 Networks.
